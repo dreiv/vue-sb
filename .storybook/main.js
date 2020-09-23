@@ -6,12 +6,5 @@ module.exports = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials"
-  ],
-  webpackFinal: (config) => {
-    if (config.mode === 'production') {
-      config.output.publicPath = 'vue-sb'
-    }
-
-    return config;
-  },
+  ]
 }
